@@ -1,12 +1,22 @@
 package com.company;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
 
+        Random a = new Random();
+        int ranAge = a.nextInt(107);
+        System.out.println("Случайное число " + ranAge);
+
+        Random t = new Random();
+        int ranT memp = t.nextInt(30) -20;
+        System.out.println("Случайное число " + ranTemp);
+
         String name = "Адилет";
-        int age = 21;
-        int temp = 29;
+        int age = ranAge;
+        int temp = ranTemp;
 
         if (age > 20 && age < 45) {
 
@@ -30,9 +40,6 @@ public class Main {
                 System.out.println("Можно");
             }
         }
-
-
-
 
     }
 }
