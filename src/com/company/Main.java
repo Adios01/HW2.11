@@ -6,17 +6,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Random a = new Random();
-        int ranAge = a.nextInt(107);
-        System.out.println("Случайное число " + ranAge);
-
-        Random t = new Random();
-        int ranTemp = t.nextInt(30) -20;
-        System.out.println("Случайное число " + ranTemp);
 
         String name = "Адилет";
-        int age = ranAge;
-        int temp = ranTemp;
+        int age = ranAge();
+        int temp = ranTemp();
 
         if (age > 20 && age < 45) {
 
@@ -41,5 +34,19 @@ public class Main {
             }
         }
 
+    }
+
+    public static int ranAge() {
+        Random a = new Random();
+        int ranAge = a.nextInt(107);
+        System.out.println("Случайное число " + ranAge);
+        return ranAge;
+    }
+
+    public static int ranTemp() {
+        Random t = new Random();
+        int ranTemp = t.nextInt(30) - 20;
+        System.out.println("Случайное число " + ranTemp);
+        return ranTemp;
     }
 }
