@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Случайное число " + ranAge);
 
         Random t = new Random();
-        int ranT memp = t.nextInt(30) -20;
+        int ranTemp = t.nextInt(30) -20;
         System.out.println("Случайное число " + ranTemp);
 
         String name = "Адилет";
